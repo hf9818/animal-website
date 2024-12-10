@@ -1,187 +1,212 @@
 <html>
 <head>
+   <style>
+   /* Global Styles */
+   body {
+      text-align: center;
+      background-image: linear-gradient(rgb(197, 132, 255), rgb(134, 255, 132), rgb(250, 201, 239));
+      min-width: 100%;
+      min-height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+   }
 
-   
- <style>
+   h1 {
+      font-size: 40px;
+   }
 
+   mark {
+      background-color: violet;
+      color: white;
+   }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: pink;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+   /* Navigation Bar Styles */
+   .navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+   }
 
-#myBtn:hover {
-  background-color: violet;
-  
-}.bn47 {
-  position:relative;
-  padding: 1rem 2rem 0.5rem 2.5rem;
-  color: #000000;
-  border: 3px solid #776e62;
-  -webkit-transition: padding 0.3s ease-in-out;
-  transition: padding 0.3s ease-in-out;
-}
+   .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 0.3s;
+   }
 
-.bn47:before {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  border-right: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+   .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+   }
 
-.bn47:hover {
-  padding: 0.75rem 2.25rem;
-}
+   .navbar a.active {
+      background-color: violet;
+      color: white;
+   }
 
-.bn47:hover:before {
-  top: 0;
-  left: 0;
-}
- 
-h1 {
-  font-size: 40px;
-}
-     body{
-         text-align: center;
-         background-image: linear-gradient(rgb(197, 132, 255 ), rgb(134, 255, 132 ), rgb(250, 201, 239));
-         min-width: 100%;
-         min-height: 100%;
-      }
- mark { 
-  background-color: violet;
-  color: white;
-}
- 
-  </style>
-  
+   /* Button Styles */
+   #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: pink;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+   }
+
+   #myBtn:hover {
+      background-color: violet;
+   }
+
+   /* Custom Button Hover Effect */
+   .bn47 {
+      position:relative;
+      padding: 1rem 2rem 0.5rem 2.5rem;
+      color: #000000;
+      border: 3px solid #776e62;
+      -webkit-transition: padding 0.3s ease-in-out;
+      transition: padding 0.3s ease-in-out;
+   }
+
+   .bn47:before {
+      content: "";
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      border-right: 3px solid #ffffff;
+      border-bottom: 3px solid #ffffff;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .bn47:hover {
+      padding: 0.75rem 2.25rem;
+   }
+
+   .bn47:hover:before {
+      top: 0;
+      left: 0;
+   }
+
+   /* Marquee and Other Styles */
+   h2 {
+      font-size: 28px;
+   }
+
+   /* Container for iframe videos */
+   iframe {
+      margin-top: 20px;
+   }
+   </style>
 </head>
 
 <body>
 
+   <!-- Navigation Bar -->
+   <div class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#dogs">Dogs</a>
+      <a href="#cats">Cats</a>
+      <a href="#fish">Fish</a>
+      <a href="#hamster">Hamsters</a>
+      <a href="#rabbits">Rabbits</a>
+      <a href="#birds">Birds</a>
+      <a href="#turtles">Turtles</a>
+      <a href="#movie">Movie</a>
+   </div>
 
-<h1>
-<marquee><mark><b>PETS</b></mark></marquee></h1> 
-<img src="https://www.animalregister.co.nz/uploads/public/hero__FitMaxWzQ0Niw1MDld.jpg">
-<p> Animals are really important in people's lives, emotionally and physically. That is why everyone should have a pet! <br>Although they are hard to handle they will become your best friends.</br></p>
- 
-  <h2>
-  Look at the video below to learn more about pets:
-  </h2>
-<iframe width="711" height="400" src="https://www.youtube.com/embed/S1nUMsPC1-0" title="Pets | Learn more about pets for kids | Kids academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <h1>
+      <marquee><mark><b>PETS</b></mark></marquee>
+   </h1>
+   <img src="https://www.animalregister.co.nz/uploads/public/hero__FitMaxWzQ0Niw1MDld.jpg">
+   <p>Animals are really important in people's lives, emotionally and physically. That is why everyone should have a pet! <br>Although they are hard to handle, they will become your best friends.</br></p>
 
-<p>
-Now that you have watched the video, I can tell you a little more about each animal individualy.
-</p>
-<h2>
-Dogs
-</h2>
-<p> 
-The dog is a domesticated descendant of the wolf. Also called the domestic dog, it was selectively bred from an extinct population of wolves during the Late Pleistocene by hunter-gatherers. The dog was the first species to be domesticated by humans, over 14,000 years ago and before the development of agriculture.There lifspan is 10-13 years and it's daily sleep is 12 – 14 hours (Adult).
-</p>
+   <h2>Look at the video below to learn more about pets:</h2>
+   <iframe width="711" height="400" src="https://www.youtube.com/embed/S1nUMsPC1-0" title="Pets | Learn more about pets for kids | Kids academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2>Cats</h2>
+   <p>Now that you have watched the video, I can tell you a little more about each animal individually.</p>
 
-<p>The cat, also referred to as domestic cat or house cat, is a small domesticated carnivorous mammal. It is the only domesticated species of the family Felidae. Advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC.A cats lifspan is 13-20 years and it's daily sleep is 12-16 hours.Cats are very intellagant animals but be carfull they are very self confidant.</p>
+   <!-- Dog Section -->
+   <h2 id="dogs">Dogs</h2>
+   <p>The dog is a domesticated descendant of the wolf. Also called the domestic dog, it was selectively bred from an extinct population of wolves during the Late Pleistocene by hunter-gatherers. They live 10-13 years and sleep 12-14 hours a day (adult).</p>
 
-<h2>Fish</h2>
+   <!-- Cats Section -->
+   <h2 id="cats">Cats</h2>
+   <p>The cat, also referred to as domestic cat or house cat, is a small domesticated carnivorous mammal. Their lifespan is 13-20 years, and they sleep 12-16 hours a day.</p>
 
-<p>
-A fish is an aquatic, anamniotic, gill-bearing vertebrate animal with swimming fins and a hard skull, but lacking limbs with digits.You can have lots of diffrent fishes.
-</p>
+   <!-- Fish Section -->
+   <h2 id="fish">Fish</h2>
+   <p>A fish is an aquatic, anamniotic, gill-bearing vertebrate animal with swimming fins and a hard skull, but lacking limbs with digits.</p>
 
-<h2>
-If you want to learn more about fishes, look at the video below:
-</h2>
+   <h2>If you want to learn more about fishes, look at the video below:</h2>
+   <iframe width="711" height="400" src="https://www.youtube.com/embed/TwVAMry3SQ0" title="All about Fish for Kids | Learn the characteristics of fish | What is a fish?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="711" height="400" src="https://www.youtube.com/embed/TwVAMry3SQ0" title="All about Fish for Kids | Learn the characteristics of fish | What is a fish?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <!-- Hamster Section -->
+   <h2 id="hamster">Hamster</h2>
+   <p>If you live in a tight area like an apartment or a small home, a hamster is the right pet for you. Hamsters are intelligent and can be trained to do simple tricks.</p>
 
-<h2>
-Hamster
-</h2>
-<p>
-If you live in a tight area like an apartment or a small home a Hamster is the right pet for you.Hamsters generally make good family pets because Hamsters are intelligent and learn quickly; they can be trained to come when food is presented or to perform simple tricks. Not all hamsters are sociable some hamsters can be tricky to handle and also can bite but if you get the right hamster you cant have any problems.
-</p><br>
-<h2>
-Rabbits
-</h2>
-<p>
-Rabbits are small mammals in the family Leporidae, which is in the order Lagomorpha. They are familiar throughout the world as a wild prey animal, a domesticated form of livestock, and a pet, having a widespread effect on ecologies and cultures. The most widespread rabbit genera are Oryctolagus and Sylvilagus.
-There lifespan is 9 or 3-5 years deppending on the type and their daily sleep is 6-8 hours. </p><br><br>
+   <!-- Rabbits Section -->
+   <h2 id="rabbits">Rabbits</h2>
+   <p>Rabbits are small mammals in the family Leporidae. Their lifespan is 9 or 3-5 years, depending on the type. They sleep 6-8 hours daily.</p>
 
-<h2>
-Birds
-</h2>
+   <!-- Birds Section -->
+   <h2 id="birds">Birds</h2>
+   <p>Birds are warm-blooded vertebrates characterised by feathers, toothless beaked jaws, and a high metabolic rate.</p>
 
-<p>
-Birds are a group of warm-blooded vertebrates constituting the class Aves, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton. 
-</p>
+   <h2>To learn more about birds, watch the video below:</h2>
+   <iframe width="711" height="400" src="https://www.youtube.com/embed/8U48-yS94AY" title="All About Birds for Kids - Birds Vocabulary for Children to Learn about Birds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2>
-To learn more about birds, watch the video below:
-</h2>
-<iframe width="711" height="400" src="https://www.youtube.com/embed/8U48-yS94AY" title="All About Birds for Kids - Birds Vocabulary for Children to Learn about Birds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br><br>
-<h2>
-turtles
-</h2>
+   <!-- Turtles Section -->
+   <h2 id="turtles">Turtles</h2>
+   <p>Turtles are reptiles with a special shell developed mainly from their ribs. They are divided into two major groups based on how they retract their heads.</p>
 
-<p>
-Turtles are reptiles of the order Testudines, characterized by a special shell developed mainly from their ribs. Modern turtles are divided into two major groups, the Pleurodira and Cryptodira, which differ in the way the head retracts.</p><br>
+   <!-- Movie Section -->
+   <h2 id="movie">If you fell in love with pets, I think you will love this movie. Click the video to watch the trailer:</h2>
+   <iframe width="711" height="400" src="https://www.youtube.com/embed/i-80SGWfEjM" title="The Secret Life Of Pets | Official Teaser Trailer (HD) | Illumination" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2> If you fell in love with pets i think you will love this<br> movie
- if you would like watch the trailer click the video
-</h2>
+   <h2><u>That is all for now, but click the link below to learn more:</u></h2><br>
+   <a class="bn47" href="https://en.wikipedia.org/wiki/Pet#">Pets</a>
 
-<iframe width="711" height="400" src="https://www.youtube.com/embed/i-80SGWfEjM" title="The Secret Life Of Pets | Official Teaser Trailer (HD) | Illumination" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<h2><u>
-That is all for now but click the link bellow to learn more
-</u></h2><br>
+   <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
 
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
 
+      function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+         } else {
+            mybutton.style.display = "none";
+         }
+      }
 
-<a class="bn47" href="https://en.wikipedia.org/wiki/Pet#">pets</a>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+      }
+   </script>
 
 </body>
+</html>
